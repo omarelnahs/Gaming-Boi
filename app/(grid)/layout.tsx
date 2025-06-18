@@ -1,4 +1,6 @@
 import GridContainer from "../Components/defaults/GridContainer";
+import MaxWidthWrapper from "../Components/defaults/MaxWidthWrapper";
+import NavBar from "../Components/Nav/NavBar";
 import SideBar from "../Components/Nav/SideBar";
 
 export default function RootLayout({
@@ -10,7 +12,10 @@ export default function RootLayout({
         <div className="bg grid h-screen ">
             <GridContainer cols={12}>
                 <SideBar />
-                <div className="col-span-10">{children}</div>
+                <MaxWidthWrapper className="col-span-10">
+                    <NavBar />
+                    {children}
+                </MaxWidthWrapper>
             </GridContainer>
         </div>
     );

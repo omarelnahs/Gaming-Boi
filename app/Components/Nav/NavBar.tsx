@@ -1,8 +1,11 @@
 import React from 'react'
+import Search from '../Search'
 
 const NavBar = () => {
   return (
-    <div>NavBar</div>
+    <div>
+      <Search />
+    </div>
   )
 }
 

@@ -1,3 +1,4 @@
+import ButtonGradient from "../Components/ButtonGradient";
 import GridContainer from "../Components/defaults/GridContainer";
 import MaxWidthWrapper from "../Components/defaults/MaxWidthWrapper";
 import NavBar from "../Components/Nav/NavBar";
@@ -10,6 +11,7 @@ export default function RootLayout({
 }>) {
     return (
         <div className="bg grid h-screen ">
+            <ButtonGradient />
             <GridContainer cols={12}>
                 <SideBar />
                 <MaxWidthWrapper className="col-span-10">
